@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=game
+comment0.text=\r\n\ Main\ driver\ for\ the\ game\r\n\r\n\ @author\ Bill\ Viggers\r\n\ @version\ 20-March-2022\r\n
+comment1.params=
+comment1.target=game()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ game\r\n
+numComments=2
