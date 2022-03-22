@@ -13,14 +13,14 @@
 public class level1
 {
 
-    int task=5;  // change this to the current task you are on.  This is really task 0.
+    int task=0;  // change this to the current task you are on.  This is really task 0.
 
     /* array declarations.  You'll edit these as you work through the tasks     */
-    public int board1[]=new int[20];
-    public int board2[]=new int[20];
-    public int board3[]=new int[20];
-    public int board4[] = new int [20];
-    public int board5[] = new int[20];
+    public int board1[];
+    public int board2[];
+    public int board3[];
+    public int board4[];
+    public int board5[];
     public int board6;
     public int board7;
 
@@ -34,9 +34,6 @@ public class level1
      */
     void task1(){
 
-        for (int i=0;i<20;i++)
-            board1[i]=1;
-        //board1[7]=0; // test water        
     }
 
     /* For task two, there are trees in all the odd squares, so you only need to sandbag the even ones.
@@ -48,8 +45,6 @@ public class level1
      */
     void task2(){
 
-        for (int i=0;i<20;i+=2)
-            board2[i]=1;
 
     }
 
@@ -61,10 +56,7 @@ public class level1
      */
 
     void task3(){
-        for (int i=1;i<20;i+=2)
-            board3[i]=1;
-
-        //board3[18]=3;
+       
 
     }
     /* For task four, an old stone wall sticks out from the mountain sides.  You only need to sandbag from position three to position 16.
@@ -76,12 +68,7 @@ public class level1
      */
 
     void task4(){
-        for (int i=3; i<=16; i++)
-            board4[i]=1;
-
-        //board4[7]=0;
-
-        //board4[1]=1;
+       
 
     }
 
@@ -95,8 +82,7 @@ public class level1
      * */
 
     void task5(){
-        for (int i=6; i<=17; i+=3) 
-            board5[i]=1;
+       
 
     }
 
