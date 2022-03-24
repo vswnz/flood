@@ -74,11 +74,11 @@ public class game
             for (int i=0; i< MAXCOLS;i++) {
 
                 if (i%2==1){ // we should have a sandbag here.
-                    if ( first.board3[i] !=1){ 
+                    if ( first.board3[i] !=1.1f){ 
                         System.out.println("You forgot to put a sandbag in square "+i+" for task 3");   
                         error=3;
                     }//  no sandbag
-                    s.map[3][i]=first.board3[i]; // lets display what they put there anyway - its probably just water..
+                    else s.map[3][i]=1; //put in the sandbag.
                 } // even square
                 if (i%2==0 ){
                     s.map[3][i]=3; // 3=monolith
@@ -95,15 +95,15 @@ public class game
             for (int i=0; i< MAXCOLS;i++) {
 
                 if (i%2==0){ // we should have a sandbag here.
-                    if ( first.board2[i] !=1){ 
+                    if ( first.board2[i] !='X'){ 
                         System.out.println("You forgot to put a sandbag in square "+i+" for task 2");   
                         error=2;
                     }//  no sandbag
-                    s.map[2][i]=first.board2[i]; // lets display what they put there anyway - its probably just water..
+                    else s.map[2][i]=1; // lets add the sandbag.
                 } // even square
                 if (i%2==1 ){
                     s.map[2][i]=2; // 2=tree
-                    if (first.board2[i] !=0){ // they will run out of sandbags...
+                    if (first.board2[i] !='\u0000'){ // they will run out of sandbags...
                         System.out.println("You put something on top of the tree in square "+i+" for task 2"); 
                         error=2;
                         errordetail=1;

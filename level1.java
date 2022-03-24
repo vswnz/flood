@@ -13,12 +13,12 @@
 public class level1
 {
 
-    int task=0;  // change this to the current task you are on.  This is really task 0.
+    int task=1;  // change this to the current task you are on.  This is really task 0.
 
     /* array declarations.  You'll edit these as you work through the tasks     */
-    public int board1[];
-    public int board2[];
-    public int board3[];
+    public int[] board1;
+    public char[] board2;
+    public float[]  board3;
     public int board4[];
     public int board5[];
     public int board6;
@@ -33,30 +33,30 @@ public class level1
      * 4: Compile and run the "game" class.  Watch what happens.
      */
     void task1(){
-
+    
     }
 
     /* For task two, there are trees in all the odd squares, so you only need to sandbag the even ones.
-     * 1: update line 20 to define board2, it should have the same dimensions as board1.
-     * 2: In the task2 method, populate all the EVEN elements of your board2 array with the value of one.
+     * 1: update line 20 to define board2, it should have the same dimensions as board1 but be of characters.
+     * 2: In the task2 method, populate all the EVEN elements of your board2 array with the value of 'X'.
      * 3: set the task number (line 16) to two.
      * 4: Compile and run the "game" class.  Watch what happens.
      * 
      */
     void task2(){
-
+    
 
     }
 
     /* for task three, the next row of trees has been planted offset from the first. We need to put sandbags in the odd squares this time.
-     * 1: update line 21 to defne board3, it should have the same dimensions as board1.
-     * 2: In the task3 method, populate all the ODD elements of your board3 array with the value of one.
+     * 1: update line 21 to defne board3, it should have the same dimensions as board1 but be of floats.
+     * 2: In the task3 method, populate all the ODD elements of your board3 array with the value of 1.1.
      * 3: set the task number (line 16) to three
      * 4: Compile and run the "game" class.  Watch what happens.
      */
 
     void task3(){
-       
+      
 
     }
     /* For task four, an old stone wall sticks out from the mountain sides.  You only need to sandbag from position three to position 16.
