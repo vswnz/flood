@@ -27,10 +27,10 @@ public class level1
     /* end of where you  define arrays*/
 
     /* For task one you must:
-     * 1: look at line 19 to see how board1 is defined.
+     * 1: look at line 19 to see how board1 is defined.  Update this to be an array of 20 integers.
      * 2: In the task1 method, populate all elements of your your board1 array with the value of one.
      * 3: Set the task number (line 16) to one.
-     * 4: Compile and run.  Watch what happens.
+     * 4: Compile and run the "game" class.  Watch what happens.
      */
     void task1(){
 
@@ -40,7 +40,7 @@ public class level1
      * 1: update line 20 to define board2, it should have the same dimensions as board1.
      * 2: In the task2 method, populate all the EVEN elements of your board2 array with the value of one.
      * 3: set the task number (line 16) to two.
-     * 4: Compile and run.  Watch what happens.
+     * 4: Compile and run the "game" class.  Watch what happens.
      * 
      */
     void task2(){
@@ -52,7 +52,7 @@ public class level1
      * 1: update line 21 to defne board3, it should have the same dimensions as board1.
      * 2: In the task3 method, populate all the ODD elements of your board3 array with the value of one.
      * 3: set the task number (line 16) to three
-     * 4: Compile and run.  Watch what happens.
+     * 4: Compile and run the "game" class.  Watch what happens.
      */
 
     void task3(){
@@ -63,7 +63,7 @@ public class level1
      * 1: update line 22 to define board4.  It should still have the same dimension as board1
      * 2: In the task5 method, populate all the elements of your board4 array from 4 to 16 with the value of one
      * 3: set the task number (line 16) to four
-     * 4: compile and run.  Watch what happens.
+     * 4: Compile and run the "game" class.  Watch what happens.
      *
      */
 
@@ -78,7 +78,7 @@ public class level1
      * 1: Update line 22 to define board5.  It should be the same dimensions as board1.
      * 2: In the task5 method, populate all the elements of your board5 array that require sandbagging, with the value of one.
      * 3: set the task number (line 16) to five
-     * 4: Compile and run.  Watch what happens.
+     * 4: Compile and run the "game" class.  Watch what happens..
      * */
 
     void task5(){
@@ -94,7 +94,8 @@ public class level1
      */
     public level1()
     {
+    // We don't need to do anything in here.
     }
-    // method to return a given array from this class
+    
 
 }
