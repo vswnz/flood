@@ -13,10 +13,10 @@
 public class level1
 {
 
-    int task=1;  // change this to the current task you are on.  This is really task 0.
+    int task=0;  // change this to the current task you are on.  This is really task 0.
 
     /* array declarations.  You'll edit these as you work through the tasks     */
-    public int[] board1;
+    public int[] board1=new int[19];
     public char[] board2;
     public float[]  board3;
     public int board4[];

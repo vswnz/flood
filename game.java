@@ -5,6 +5,8 @@
  * @author Bill Viggers
  * @version 20-March-2022
  */
+
+
 public class game
 {
 
@@ -25,6 +27,21 @@ public class game
         for (int i=0;i<MAXCOLS;i++)
             s.map[0][i]=0;
 
+        // check array bounds
+        int check=0;  // us for which checks the try is for.
+        int taskcheck=1;  // which task to try.
+        try {
+            int x=first.board1[19]; // should not give an error
+            check =1; // move onto ones that should work.
+           if (first.board1[20] ==1) // should give an error.
+            {} // never run this.
+        } catch (Exception e) {
+        System.out.println(e);
+    }
+        
+            
+            
+            
         switch (first.task){  
             case 5: // irrigation ditches
             first.task5();
