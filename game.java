@@ -6,7 +6,6 @@
  * @version 20-March-2022
  */
 
-
 public class game
 {
 
@@ -28,20 +27,75 @@ public class game
             s.map[0][i]=0;
 
         // check array bounds
-        int check=0;  // us for which checks the try is for.
+        //int check=0;  // us for which checks the try is for.
         int taskcheck=1;  // which task to try.
-        try {
-            int x=first.board1[19]; // should not give an error
-            check =1; // move onto ones that should work.
-           if (first.board1[20] ==1) // should give an error.
-            {} // never run this.
-        } catch (Exception e) {
-        System.out.println(e);
-    }
+
+        // first we check items that should give errors.  this makes sure that bounds are not set too high
+        // Because of these we can't really do it in a loop.
+
+        try{
+            int x=first.board1[20];
+            System.out.println("You made the array too big in task 1");
+            error=1;
+        } catch (Exception e) {} // we expect an error here, no problems.
+
+        if (error==0){
+            try{
+                char x=first.board2[20];
+                System.out.println("You made the array too big in task 2");
+                error=1;
+            } catch (Exception e) {} // we expect an error here, no problems.
+        } // check task 2 upper bound
+
+        if (error==0){
+            try{
+                float x=first.board3[20];
+                System.out.println("You made the array too big in task 3");
+                error=1;
+            } catch (Exception e) {} // we expect an error here, no problems.
+        } // check task 3 upper bound
+        if (error==0){
+            try{
+                float x=first.board4[20];
+                System.out.println("You made the array too big in task 4");
+                error=1;
+            } catch (Exception e) {} // we expect an error here, no problems.
+        } // check task 4 upper bound
+        if (error==0){
+            try{
+                float x=first.board5[20];
+                System.out.println("You made the array too big in task 5");
+                error=1;
+            } catch (Exception e) {} // we expect an error here, no problems.
+        } // check task 5 upper bound  
+
         
+        
+        // Now we check that arrays was big enough.  These should not generate errors.
+        if (error ==0)
+        try {
+            System.out.println("Checking bounds are high enough");
+            taskcheck=1;
+            int x=first.board1[19]; // should not give an error
+            taskcheck=2;
+            char c=first.board2[19]; // should not give an error;
+            taskcheck=3;
+            float f=first.board3[19]; // should not give an error;
+            taskcheck=4;
+            x=first.board4[19]; // should not give an error
+            taskcheck=5;
+            x=first.board5[19]; // should not give an error
             
             
             
+        } catch (Exception e) {
+            System.out.println("Hmm... an error...");
+            System.out.println("You didn't set the array bound high enough for task "+taskcheck);
+            //System.out.println(e);
+            error=1;
+        }
+
+        if (error !=1)
         switch (first.task){  
             case 5: // irrigation ditches
             first.task5();
@@ -65,7 +119,7 @@ public class game
                     } // add correct icon to map.
 
                 } // hill squares.
-                
+
             } // each location.
             case 4: // wall from edges
             first.task4();
