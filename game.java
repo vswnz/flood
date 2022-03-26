@@ -118,7 +118,7 @@ public class game
         if (error ==NOERROR)
             error=checkTopBoundHighEnoughLevel1(first);
 
-        System.out.println("DEBUG: After bound checking.  Error status is "+error);
+        //System.out.println("DEBUG: After bound checking.  Error status is "+error);
 
         for (int i=0;i<MAXCOLS;i++)
             s.map[0][i]=0;
