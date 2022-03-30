@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=level1
-comment0.text=\r\n\ Level\ 1\ *\r\n\ \r\n\ There\ are\ several\ tasks\ to\ accomplish.\ \ Try\ them\ one\ at\ a\ time.\r\n\ They\ are\ named\ task1,\ task2,\ etc.\r\n\ \r\n\ Don't\ forget\ to\ fill\ in\ your\ name\ and\ details.\r\n\ \r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Level\ 1\ *\r\n\ \r\n\ There\ are\ several\ tasks\ to\ accomplish.\ \ Try\ them\ one\ at\ a\ time.\r\n\ They\ are\ named\ task1,\ task2,\ etc.\r\n\ \r\n\ Tasks\ were\ taken\ from\:\r\n\ Wu\u2019s\ castle\:\ teaching\ arrays\ and\ loops\ in\ a\ game.\ In\ Proceedings\ of\ the\ \r\n\ 13th\ Annual\ Conference\ on\ Innovation\ and\ Technology\ in\ Computer\ Science\ \r\n\ Education,\ ITiCSE\ 2008.\ (pp.\ 245-249)\ \r\n\ https\://doi.org/10.1145/1384271.1384337\u0000\r\n\ \r\n\ Don't\ forget\ to\ fill\ in\ your\ name\ and\ details.\r\n\ \r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ task1()
 comment1.text=\ For\ task\ one\ you\ must\:\r\n\ 1\:\ look\ at\ line\ 19\ to\ see\ how\ board1\ is\ defined.\ \ Update\ this\ to\ be\ an\ array\ of\ 20\ integers.\r\n\ 2\:\ In\ the\ task1\ method,\ populate\ all\ elements\ of\ your\ your\ board1\ array\ with\ the\ value\ of\ one.\r\n\ 3\:\ Set\ the\ task\ number\ (line\ 16)\ to\ one.\r\n\ 4\:\ Compile\ and\ run\ the\ "game"\ class.\ \ Watch\ what\ happens.\r\n
