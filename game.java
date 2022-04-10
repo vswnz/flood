@@ -108,9 +108,7 @@ public class game
 
         //System.out.println("DEBUG: Returned from checkTopBoundTooHighLevel1 with code: "+error+"; higest task was "+first.task);
 
-
         // Set the inital flood waters
-
         // first we check items that should give errors.  this makes sure that bounds are not set too high
         // Because of these we can't really do it in a loop.
 
@@ -215,20 +213,28 @@ public class game
                 } //for
 
                 case 1:  // line of sandbags
-                first.task1();
-                for (int i=0; i< MAXCOLS;i++) {
-                    s.map[1][i]=first.board1[i];
-                    if (first.board1[i] !=1){
-                        System.out.println("You forgot to put a sandbag in square "+i+" for task 1");   
-                        error=1;
-                    }// if
-                } //for
+                try {
+                    first.task1();
+                    for (int i=0; i< MAXCOLS;i++) {
+                        s.map[1][i]=first.board1[i];
+                        if (first.board1[i] !=1){
+                            System.out.println("You forgot to put a sandbag in square "+i+" for task 1");   
+                            error=1;
+                        }// if
+                    } //for
+                } catch (Exception e){
+                    System.out.println("Your code in task1 has an error in it.");
+                    System.out.println(e.toString());
+                    error=1;
+                }// catch
+
                 break;
                 default: System.out.println("You have not correctly set your task variable on line 16");
                 System.out.println("It is currently set to "+first.task);
                 error =0;
                 break;
             } // switch
+
 
         if (error > -1){
             System.out.println("The village flooded.  Go back to task "+error+" and check your work");
