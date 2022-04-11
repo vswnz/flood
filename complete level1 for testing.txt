@@ -18,14 +18,14 @@
 public class level1
 {
 
-    int task=0;  // change this to the current task you are on.  This is really task 0.
+    int task=1;  // change this to the current task you are on.  This is really task 0.
 
     /* array declarations.  You'll edit these as you work through the tasks     */
-    public int[] board1 = new int[2];
-    public char[] board2 ;
-    public float[] board3 ;
-    public boolean[]  board4 ;
-    public long[]  board5 ;
+    public int[] board1 = new int[20];
+    public char[] board2 = new char[20];
+    public float[] board3 = new float[20];
+    public boolean[]  board4 = new boolean[20];
+    public long[]  board5 = new long[20];
 
     /* end of where you  define arrays*/
     /* For task one you must:
@@ -36,8 +36,8 @@ public class level1
      * 4: Compile and run the "game" class.  Watch what happens.
      */
     void task1(){
-        for (int i=-1;i<2;i++)
-            board1[i]=0;
+        for (int i=0;i<20;i++)
+            board1[i]=1;
     }
 
     /* For task two, there are trees in all the odd squares, so you only need to sandbag the even ones.
@@ -48,7 +48,8 @@ public class level1
      * 
      */
     void task2(){
-        
+        for (int i=0;i<20;i+=2)
+            board2[i]='X';
     }
     
     
@@ -60,6 +61,8 @@ public class level1
      * 4: Compile and run the "game" class.  Watch what happens.
      */
     void task3(){
+        for (int i=1;i<20;i+=2)
+            board3[i]=1.1f;
 
     }
 
@@ -72,6 +75,8 @@ public class level1
      *
      */
     void task4(){
+        for (int i=3;i<17;i++)
+            board4[i]=true;
 
     }
 
@@ -85,6 +90,8 @@ public class level1
      * 4: Compile and run the "game" class.  Watch what happens..
      * */
     void task5(){
+         for (int i=5;i<=17;i+=3)
+            board5[i]=1l;
 
     }
 

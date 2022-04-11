@@ -1,4 +1,3 @@
-
 /**
  * Main driver for the game
  *
@@ -48,7 +47,7 @@ public class game
         if (first.task <4) return error;
         if (error==NOERROR){
             try{
-                float x=first.board4[20];
+                boolean x=first.board4[20];
                 System.out.println("You made the array too big in task 4");
                 error=1;
             } catch (Exception e) {} // we expect an error here, no problems.
@@ -84,10 +83,10 @@ public class game
                 float f=first.board3[19]; // should not give an error;
             } if (first.task >3){
                 taskCheck=4;
-                int x=first.board4[19]; // should not give an error
+                boolean x=first.board4[19]; // should not give an error
             } if (first.task >4){
                 taskCheck=5;
-                int x=first.board5[19];
+                long x=first.board5[19];
             }// should not give an error
         } catch (Exception e) {
             //System.out.println("Hmm... an error...");
@@ -119,12 +118,12 @@ public class game
         //System.out.println("DEBUG: After bound checking.  Error status is "+error);
 
         for (int i=0;i<MAXCOLS;i++)
-            s.map[0][i]=0;
+            s.map[0][i]=0;              // rising river in row 0
 
         // check array bounds
         //int check=0;  // us for which checks the try is for.
         int errordetail=0; // task specific errors.
-
+        //System.out.println("Current errorstatus: "+error);
         if (error ==NOERROR)
             switch (first.task){  
                 case 5: // irrigation ditches
@@ -132,7 +131,7 @@ public class game
                     first.task5();
                     boolean okay=true;
                     for (int i=0; i<20; i++) {  //check each position 
-                        s.map[5][i]=first.board5[i];
+                        s.map[5][i]=(int)first.board5[i];
                         if ( i>=5 && i<=17 && (i%3==2)){  // there should be a sandbag.
                             if (first.board5[i]!=1){
                                 System.out.println("You forgot to put a sandbag in square "+i+" for task 5");   
@@ -153,7 +152,7 @@ public class game
 
                     } // each location.
                 } catch (Exception e){
-                    System.out.println("Your code in task 2 has an error in it.");
+                    System.out.println("Your code in task 5 has an error in it.");
                     System.out.println(e.toString());
                     error=1;
                 }// catch
@@ -163,22 +162,22 @@ public class game
                     for (int i=0; i<3; i++){ 
                         s.map[4][i]=4;
                         s.map[4][MAXCOLS-i-1]=4;
-                        if (first.board4[i]!=0 || first.board4[MAXCOLS-i-1]!=0){
+                        if (first.board4[i] || first.board4[MAXCOLS-i-1]){
                             System.out.println("You can't put something in square "+i+" in task 4.  It's got a wall there!");
                             error =4;
                             errordetail=1;
                         }
                     } // set up walls.
                     for (int i=3;i<=16;i++){
-                        s.map[4][i]=first.board4[i];
-                        if (first.board4[i]!=1){
+                        if (first.board4[i]) s.map[4][i]=1;
+                        if (!first.board4[i]){
                             System.out.println("You forgot to put a sandbag in square "+i+" for task 4");   
                             error=4;
                         }//  no sandbag
 
                     } // for each square that should be sanbagged.
                 } catch (Exception e){
-                    System.out.println("Your code in task 2 has an error in it.");
+                    System.out.println("Your code in task 4 has an error in it.");
                     System.out.println(e.toString());
                     error=1;
                 }// catch
@@ -204,7 +203,7 @@ public class game
                         } // odd square
                     } //for
                 } catch (Exception e){
-                    System.out.println("Your code in task 2 has an error in it.");
+                    System.out.println("Your code in task 3 has an error in it.");
                     System.out.println(e.toString());
                     error=1;
                 }// catch
@@ -237,6 +236,7 @@ public class game
 
                 case 1:  // line of sandbags
                 try {
+                    System.out.println("task one");
                     first.task1();
                     for (int i=0; i< MAXCOLS;i++) {
                         s.map[1][i]=first.board1[i];
@@ -264,10 +264,9 @@ public class game
             System.out.println("Hurrah!  You saved the village from wave "+first.task);
         }
 
-        /*
         for (int i=0;i<MAXCOLS;i++)
-        System.out.println(s.map[0][i]);
-         */
+            System.out.println(s.map[1][i]);
+
         s.repaint();
     } // constructor
 
