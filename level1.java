@@ -27,10 +27,10 @@ public class level1
     public boolean[]  board4 ;
     public long[]  board5 ;
 
-    /* end of where you  define arrays*/
+    /* end of where you  define arrays.  Don't ADD any lines above here. */
     /* For task one you must:
      * 1: look at line 25 to see how board1 is defined.  Update this to be an array of 20 integers.
-     * 2: In the task1 method, populate all elements of your your board1 array with the value of one.
+     * 2: In the task1 method, populate all elements of your your board1 array with the value of 1
      *      You will need to change the loop and the command after it to do this.
      * 3: Set the task number (line 22) to one.
      * 4: Compile and run the "game" class.  Watch what happens.
@@ -41,9 +41,9 @@ public class level1
     }
 
     /* For task two, there are trees in all the odd squares, so you only need to sandbag the even ones.
-     * 1: update line 26 to define board2, it should have the same dimensions as board1 but be of characters.
+     * 1: update line 26 to define board2, it should have the same dimensions as board1 but be of type char.
      * 2: In the task2 method, populate all the EVEN elements of your board2 array with the value of 'X'.
-     * 3: set the task number (line 22) to two.
+     * 3: Set the task number (line 22) to two.
      * 4: Compile and run the "game" class.  Watch what happens.
      * 
      */
@@ -54,9 +54,9 @@ public class level1
     
 
     /* for task three, the next row of trees has been planted offset from the first. We need to put sandbags in the odd squares this time.
-     * 1: update line 27 to defne board3, it should have the same dimensions as board1 but be of floats.
-     * 2: In the task3 method, populate all the ODD elements of your board3 array with the value of 1.1.
-     * 3: set the task number (line 22) to three
+     * 1: Update line 27 to defne board3, it should have the same dimensions as board1 but be of floats.
+     * 2: In the task3 method, populate all the ODD elements of your board3 array with the value of 1.1
+     * 3: Set the task number (line 22) to three
      * 4: Compile and run the "game" class.  Watch what happens.
      */
     void task3(){
@@ -65,9 +65,9 @@ public class level1
 
     /* For task four, an old stone wall sticks out from the mountain sides.  You only need to sandbag from 
      * position three to position 16.
-     * 1: update line 28 to define board4.  It should still have the same dimension as board1 but be booleans
+     * 1: Update line 28 to define board4.  It should still have the same dimension as board1 but be booleans
      * 2: In the task4 method, populate all the elements of your board4 array from 4 to 16 with the value of true
-     * 3: set the task number (line 22) to four
+     * 3: Set the task number (line 22) to four
      * 4: Compile and run the "game" class.  Watch what happens.
      *
      */
@@ -80,8 +80,8 @@ public class level1
      * The gaps start in space 5, and happen every three squares until space 17.
      * You will need to sandbag them.
      * 1: Update line 29 to define board5.  It should be the same dimensions as board1 but long integers.
-     * 2: In the task5 method, populate all the elements of your board5 array that require sandbagging, with the value of one.
-     * 3: set the task number (line 22) to five
+     * 2: In the task5 method, populate all the elements of your board5 array that require sandbagging, with the value of 1
+     * 3: Set the task number (line 22) to five
      * 4: Compile and run the "game" class.  Watch what happens..
      * */
     void task5(){
