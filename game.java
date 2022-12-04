@@ -3,6 +3,7 @@
  *
  * @author Bill Viggers
  * @version 27-March-2022 -  bound checking fixed.
+ * 14-Nov-2022 small comment change.
  */
 
 public class game
@@ -15,7 +16,7 @@ public class game
      * Constructor for objects of class game
      */
 
-    // returns error, 
+    // returns error 
     int checkTopBoundTooHighLevel1(level1 first){
         int error=NOERROR;     
 
